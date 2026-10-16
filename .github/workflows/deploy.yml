@@ -39,6 +39,15 @@ jobs:
         run: uv python install 3.13
       - name: Install Python dependencies
         run: uv sync --locked
+      - name: Activate virtual environment
+        # Put .venv on PATH so MyST can find `jupyter` and the python3 kernel
+        run: |
+          echo "VIRTUAL_ENV=$GITHUB_WORKSPACE/.venv" >> "$GITHUB_ENV"
+          echo "$GITHUB_WORKSPACE/.venv/bin" >> "$GITHUB_PATH"
+      - name: Check Jupyter kernel
+        run: |
+          which jupyter
+          jupyter kernelspec list
       - uses: actions/setup-node@v7
         with:
           node-version: 24.x
@@ -48,7 +57,11 @@ jobs:
         uses: actions/cache@v4
         with:
           path: _build/execute
-          key: myst-execute-${{ runner.os }}-${{ hashFiles('myst.yml', 'pyproject.toml', 'uv.lock', 'notebooks/**/*.ipynb', 'notebooks/**/*.md') }}
+          key: myst-execute-${{ runner.os }}-${{ hashFiles('uv.lock') }}-${{ hashFiles('notebooks/**/*.ipynb', 'notebooks/**/*.md', 'myst.yml') }}
+          # MyST caches each notebook by the hash of its code cells, so restoring
+          # an older cache re-executes only the notebooks that changed.
+          restore-keys: |
+            myst-execute-${{ runner.os }}-${{ hashFiles('uv.lock') }}-
       - name: Restore OSMnx response cache
         uses: actions/cache@v4
         with:
