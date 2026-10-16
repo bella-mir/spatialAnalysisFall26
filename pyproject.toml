@@ -1,0 +1,14 @@
+[project]
+name = "spatial-analysis-fall26"
+version = "0.1.0"
+description = "Учебные материалы курса «Анализ пространственных данных»"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel",
+    "jupyter",
+    "matplotlib",
+    "mystmd>=1.9.0",
+    "numpy",
+    "pandas",
+]

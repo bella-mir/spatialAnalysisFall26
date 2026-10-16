@@ -1,0 +1,6 @@
+ipykernel
+jupyter
+matplotlib
+mystmd>=1.9.0
+numpy
+pandas

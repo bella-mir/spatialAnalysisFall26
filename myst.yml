@@ -1,0 +1,24 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: c5e19eaa-4f0f-41f0-a553-6af3e6a30f26
+  title: Анализ пространственных данных
+  author: 'Белла Миронова'
+  copyright: "2026"
+  description: >
+    Учебные материалы курса «Анализ пространственных данных».
+  github: https://github.com/bella-mir/spatialAnalysisFall26
+  toc:
+    - file: README.md
+    - file: notebooks/module_0/environment.md
+    - file: notebooks/module_1/basics_0.ipynb
+      children:
+        - file: notebooks/module_1/basics_1.ipynb
+        - file: notebooks/module_1/basics_2.ipynb
+        - file: notebooks/module_1/basics_3.ipynb
+
+site:
+  template: book-theme
+  options:
+    favicon: logo.png
+    logo: logo.png
