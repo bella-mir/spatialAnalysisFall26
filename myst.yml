@@ -11,11 +11,12 @@ project:
   toc:
     - file: README.md
     - file: notebooks/module_0/environment.md
-    - file: notebooks/module_1/basics_0.ipynb
+    - file: notebooks/module_1/spData_0.ipynb
       children:
-        - file: notebooks/module_1/basics_1.ipynb
-        - file: notebooks/module_1/basics_2.ipynb
-        - file: notebooks/module_1/basics_3.ipynb
+        - file: notebooks/module_1/spData_1.ipynb
+        - file: notebooks/module_1/spData_2.ipynb
+        - file: notebooks/module_1/spData_3.ipynb
+        - file: notebooks/module_1/spData_4.ipynb
 
 site:
   template: book-theme

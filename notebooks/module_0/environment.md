@@ -135,7 +135,7 @@ source .venv/bin/activate
 
 #### Рекомендуемый способ — через uv
 
-В проекте уже есть файл `requirements.txt` со списком библиотек для вводного раздела. Если вы используете его вместо `pyproject.toml`, выполните:
+В проекте уже есть файл `requirements.txt` со списком библиотек для первого раздела курса. Если вы используете его вместо `pyproject.toml`, выполните:
 
 ```bash
 uv pip install -r requirements.txt
