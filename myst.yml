@@ -17,6 +17,14 @@ project:
         - file: notebooks/module_1/spData_2.ipynb
         - file: notebooks/module_1/spData_3.ipynb
         - file: notebooks/module_1/spData_4.ipynb
+    - file: notebooks/module_2/projections_0.ipynb
+      children:
+        - file: notebooks/module_2/projections_1.ipynb
+        - file: notebooks/module_2/projections_2.ipynb
+        - file: notebooks/module_2/projections_3.ipynb
+    - title: Проекты
+      children:
+        - file: notebooks/projects/project_1.ipynb
 
 site:
   template: book-theme
