@@ -22,9 +22,36 @@ project:
         - file: notebooks/module_2/projections_1.ipynb
         - file: notebooks/module_2/projections_2.ipynb
         - file: notebooks/module_2/projections_3.ipynb
+    - file: notebooks/module_3/mapping_0.ipynb
+      children:
+        - file: notebooks/module_3/mapping_1.ipynb
+        - file: notebooks/module_3/mapping_2.ipynb
+        - file: notebooks/module_3/mapping_3.ipynb
+    # Модули ниже раскомментируйте по мере публикации
+    # - file: notebooks/module_4/geoprocessing_0.ipynb
+    #   children:
+    #     - file: notebooks/module_4/geoprocessing_1.ipynb
+    #     - file: notebooks/module_4/geoprocessing_2.ipynb
+    #     - file: notebooks/module_4/geoprocessing_3.ipynb
+    #     - file: notebooks/module_4/geoprocessing_4.ipynb
+    #     - file: notebooks/module_4/geoprocessing_5.ipynb
+    #     - file: notebooks/module_4/geoprocessing_6.ipynb
+    # - file: notebooks/module_5/networkAnalysis_0.ipynb
+    #   children:
+    #     - file: notebooks/module_5/networkAnalysis_1.ipynb
+    #     - file: notebooks/module_5/networkAnalysis_2.ipynb
+    #     - file: notebooks/module_5/networkAnalysis_3.ipynb
+    # - file: notebooks/module_6/map_0.ipynb
+    #   children:
+    #     - file: notebooks/module_6/map_1.ipynb
+    #     - file: notebooks/module_6/map_2.ipynb
+    #     - file: notebooks/module_6/map_3.ipynb
     - title: Проекты
       children:
         - file: notebooks/projects/project_1.ipynb
+        - file: notebooks/projects/project_2.ipynb
+        # - file: notebooks/projects/project_3.ipynb
+        # - file: notebooks/projects/project_final.ipynb
 
 site:
   template: book-theme

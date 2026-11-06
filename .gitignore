@@ -26,3 +26,26 @@ wheels/
 
 # Project 3 example (local only)
 notebooks/projects/project_3_example/
+
+# Files created when running the lessons
+notebooks/module_1/gdf_csv.*
+notebooks/data/osm_build.geojson
+notebooks/data/muni_stat.gpkg
+notebooks/module_3/birth_rate_change.png
+notebooks/module_3/pop_change.png
+notebooks/module_6/index.html
+
+# ВРЕМЕННО: материалы после модуля III и Проекта II (убрать по мере публикации)
+notebooks/module_4/
+notebooks/module_5/
+notebooks/module_6/
+notebooks/module_extra/
+notebooks/projects/project_3.ipynb
+notebooks/projects/project_final.ipynb
+notebooks/data/spb_mkd_reforma.csv
+notebooks/data/cafes_leninsky.gpkg
+notebooks/data/spb_vas/
+notebooks/data/cholera/
+
+# Сценарии занятий (только для преподавателя)
+teaching/
