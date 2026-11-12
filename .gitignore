@@ -53,4 +53,4 @@ teaching/
 # Проект II: загрузчик БДМО и скачанные им данные (раздаются студентам отдельно)
 notebooks/projects/project_2_data.ipynb
 notebooks/data/bdmo_demography.csv
-notebooks/data/bdmo_demography_README.md
+notebooks/data/bdmo_demography_fields.csv
