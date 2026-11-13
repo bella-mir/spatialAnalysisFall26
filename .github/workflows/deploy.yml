@@ -65,8 +65,11 @@ jobs:
       - name: Restore OSMnx response cache
         uses: actions/cache@v4
         with:
-          path: cache
-          key: osmnx-${{ runner.os }}-${{ hashFiles('notebooks/module_1/spData_4.ipynb') }}
+          # OSMnx пишет кэш в ./cache относительно папки, где выполняется ноутбук
+          path: |
+            cache
+            notebooks/*/cache
+          key: osmnx-${{ runner.os }}-${{ hashFiles('notebooks/module_1/spData_4.ipynb', 'notebooks/module_4/*.ipynb') }}
           restore-keys: |
             osmnx-${{ runner.os }}-
       - name: Build HTML Assets
